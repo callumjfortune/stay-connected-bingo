@@ -1,0 +1,10 @@
+version: "3"
+services:
+  react-app:
+    build: .
+    ports:
+      - "5000:5000"
+  websocket-server:
+    build: ./websocket-server
+    ports:
+      - "4000:4000"
